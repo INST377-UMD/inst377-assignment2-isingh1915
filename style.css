@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+body {
+  font-family: 'Comic Neue', cursive;
+  background-color: #fcdde8;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+  background: #f9c5d1;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  text-transform: lowercase;
+}
+
+h1, h2, h3, p, span {
+  text-transform: lowercase;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.carousel-track img {
+  display: none;
+  width: 300px;
+  border-radius: 12px;
+}
+
+.carousel-track img.active {
+  display: block;
+}
+
+#breed-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+}
+
+.button-89 {
+  --b: 2px;
+  --s: .35em;
+  --color: #6d4c41;
+
+  padding: 0.6em 1em;
+  color: var(--color);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--s) var(--s)/calc(100% - var(--b) - 2*var(--s)) calc(100% - var(--b) - 2*var(--s));
+  outline: var(--b) solid #0000;
+  outline-offset: .5em;
+  font-size: 14px;
+  font-family: 'Comic Neue', cursive;
+  border: none;
+  user-select: none;
+  transition: all .2s ease-in-out;
+  text-transform: lowercase;
+}
+
+.button-89:hover,
+.button-89:focus-visible {
+  --s: 0px;
+  outline-color: var(--color);
+  outline-offset: .15em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+#breed-info-container {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+#voice-controls {
+  margin-top: 40px;
+  padding: 20px 0;
+  background: #fcdde8;
+  text-align: center;
+}
